@@ -1,0 +1,79 @@
+{
+	"name": "generator-react-awesome",
+	"version": "1.0.0",
+	"description": "This is a awesome generator for React App",
+	"main": "index.js",
+	"scripts": {
+		"start": "node .",
+		"dev": "concurrently --kill-others \"npm run build:watch\" \"nodemon .\"",
+		"build": "webpack",
+		"build:watch": "webpack --watch",
+		"test": "flow check && jest",
+		"test:watch": "jest --watch",
+		"lint": "eslint webpack.config.js",
+		"precommit-": "npm run test",
+		"prepush-": "npm run test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Bastorx/generator-react-awesome.git"
+	},
+	"keywords": [
+		"react",
+		"react-js",
+		"react-router",
+		"jest",
+		"webpack",
+		"babel",
+		"eslint",
+		"react-awesome",
+		"yeoman-generator"
+	],
+	"author": "Bastien Chevallier",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Bastorx/generator-react-awesome/issues"
+	},
+	"homepage": "https://github.com/Bastorx/generator-react-awesome#readme",
+	"dependencies": {
+		"express": "^4.16.1",
+		"i18next": "^10.0.1",
+		"mirror-key-value": "^1.0.5",
+		"morgan": "^1.9.0",
+		"path": "^0.12.7",
+		"prop-types": "^15.6.0",
+		"react": "^16.0.0",
+		"react-dom": "^16.0.0",
+		"react-redux": "^5.0.6",
+		"react-router": "^4.2.0",
+		"redux": "^3.7.2",
+		"redux-persist": "^4.10.1",
+		"redux-thunk": "^2.2.0",
+		"reselect": "^3.0.1"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.0",
+		"babel-eslint": "^8.0.1",
+		"babel-jest": "^21.2.0",
+		"babel-loader": "^7.1.2",
+		"babel-preset-env": "^1.6.0",
+		"babel-preset-flow": "^6.23.0",
+		"babel-preset-react": "^6.24.1",
+		"concurrently": "^3.5.0",
+		"enzyme": "^3.1.0",
+		"eslint": "^4.8.0",
+		"eslint-config-airbnb": "^16.0.0",
+		"eslint-plugin-import": "^2.7.0",
+		"eslint-plugin-jsx-a11y": "^6.0.2",
+		"eslint-plugin-react": "^7.4.0",
+		"flow-bin": "^0.56.0",
+		"husky": "^0.14.3",
+		"jest": "^21.2.1",
+		"nodemon": "^1.12.1",
+		"prettier-eslint": "^8.2.0",
+		"react-addons-test-utils": "^15.6.2",
+		"react-test-renderer": "^16.0.0",
+		"webpack": "^3.6.0"
+	}
+}

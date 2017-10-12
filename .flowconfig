@@ -1,0 +1,7 @@
+[include]
+
+[ignore]
+.*/node_modules/.*
+[libs]
+./node_modules/fbjs/flow/lib
+[options]
