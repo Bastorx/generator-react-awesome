@@ -1,20 +1,20 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-	entry: path.join(__dirname, 'app.js'),
+	entry: path.join(__dirname, "app.js"),
 	output: {
-		filename: 'public/bundle.js',
+		filename: "public/bundle.js"
 	},
 	module: {
 		loaders: [
 			{
 				test: /.jsx?$/,
-				loader: 'babel-loader',
+				loader: "babel-loader",
 				exclude: /node_modules/,
 				query: {
-					presets: ['env', 'react', 'flow'],
-				},
-			},
-		],
-	},
+					presets: ["env", "react", "flow"]
+				}
+			}
+		]
+	}
 };

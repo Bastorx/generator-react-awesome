@@ -1,23 +1,44 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb",
+  "extends": [
+    "standard",
+    "plugin:flowtype/recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react",
+    "prettier/standard",
+  ],
   "env": {
-    "browser": true,
-    "jest": true
+    "es6": true,
+    "node": true,
+  	"browser": true,
+    "jest": true,
   },
   "plugins": [
+    "flowtype",
+    "react",
+    "prettier",
+    "standard",
     "import",
     "jsx-a11y",
-    "react"
   ],
   "rules": {
-    "react/jsx-no-duplicate-props": 2,
-    "indent": [2, "tab"],
+    "indent": ["error", "tab"],
     "no-tabs": 0,
-    "no-console": ["error", { allow: ["warn", "error", "info"] }],
+    "no-console": ["warn", { allow: ["warn", "error", "info"] }],
+    "no-debugger": "warn",
+    "quotes": ["error", "double"],
+    "linebreak-style": 0,
+    "react/jsx-no-duplicate-props": 2,
+    "react/jsx-indent": [2, 'tab'],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prop-types": "warn",
+    "import/named": 0,
     "jsx-a11y/href-no-hash": "off",
     "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
-    "linebreak-style": 0
   }
 }

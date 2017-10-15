@@ -1,3 +1,3 @@
-import mirrorKeyValue from 'mirror-key-value';
+import mirrorKeyValue from "mirror-key-value";
 
-export default mirrorKeyValue(['WINDOW_RESIZE']);
+export default mirrorKeyValue(["WINDOW_RESIZE"]);

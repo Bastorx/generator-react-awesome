@@ -1,14 +1,16 @@
-import { REHYDRATE } from 'redux-persist/constants';
-import { WINDOW_RESIZE } from '../actions/action-types';
+import { REHYDRATE } from "redux-persist/constants";
+import { WINDOW_RESIZE } from "../actions/action-types";
 
-const win = typeof window === 'undefined' ? null : window;
-const doc = typeof document === 'undefined' ? null : document;
+const win = typeof window === "undefined" ? null : window;
+const doc = typeof document === "undefined" ? null : document;
 const getWidth = () => {
 	if (!win && !doc) {
 		return 0;
 	}
 	return (
-		win.innerWidth || (doc && doc.documentElement.clientWidth) || (doc && doc.body.clientWidth)
+		win.innerWidth ||
+		(doc && doc.documentElement.clientWidth) ||
+		(doc && doc.body.clientWidth)
 	);
 };
 const getHeight = () => {
@@ -16,7 +18,9 @@ const getHeight = () => {
 		return 0;
 	}
 	return (
-		win.innerHeight || (doc && doc.documentElement.clientHeight) || (doc && doc.body.clientHeight)
+		win.innerHeight ||
+		(doc && doc.documentElement.clientHeight) ||
+		(doc && doc.body.clientHeight)
 	);
 };
 
