@@ -1,17 +1,16 @@
 {
-  "presets": [
-    [
-      "env",
-      {
-        "targets": {
-          "node": "current",
-          "browsers": [">= 5%"]
-        }
-      }
-    ],
-    "react",
-    "flow",
-    "stage-3"
-  ],
-  "plugins": ["transform-class-properties"]
+	"presets": [
+		[
+			"env",
+			{
+				"targets": {
+					"node": "current",
+					"browsers": [">= 5%"]
+				}
+			}
+		],
+		"react",
+		"flow",
+		"stage-2"
+	]
 }

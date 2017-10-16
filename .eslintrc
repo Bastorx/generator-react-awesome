@@ -27,8 +27,8 @@
     "jsx-a11y",
   ],
   "rules": {
-    "no-console": 0,
-    "no-debugger": 0,
+    "no-console": ["warn", { allow: ["info", "warn", "error"] }],
+    "no-debugger": "warn",
     "no-confusing-arrow": "error",
     "max-len": ["error", {"code": 80, "ignoreUrls": true}],
     "quotes": ["error", "double"],
