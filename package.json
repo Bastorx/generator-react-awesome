@@ -38,7 +38,6 @@
   "dependencies": {
     "express": "^4.16.1",
     "i18next": "^10.0.1",
-    "mirror-key-value": "^1.0.5",
     "morgan": "^1.9.0",
     "path": "^0.12.7",
     "prop-types": "^15.6.0",
@@ -62,6 +61,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "concurrently": "^3.5.0",
     "enzyme": "^3.1.0",
     "eslint": "^4.9.0",
@@ -75,6 +75,7 @@
     "husky": "^0.14.3",
     "jest": "^21.2.1",
     "nodemon": "^1.12.1",
+    "prettier": "^1.7.4",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.0.0",
     "standard": "^10.0.3",
