@@ -1,3 +1,4 @@
+const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
@@ -13,5 +14,12 @@ module.exports = {
         exclude: /node_modules/
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.SourceMapDevToolPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    // new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 15 }),
+    new webpack.optimize.MinChunkSizePlugin({ minChunkSize: 10000 })
+  ]
 };
