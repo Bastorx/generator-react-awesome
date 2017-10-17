@@ -5,7 +5,8 @@ const Screen = ({ width, height }) => (
   <div>
     <ul>
       <li>Width: {width}</li>
-      <li>Height: {height}</li>
+      <li>Heighssst: {height}</li>
+      <li>test eee</li>
     </ul>
   </div>
 );

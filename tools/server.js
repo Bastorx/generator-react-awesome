@@ -5,10 +5,10 @@ const morgan = require("morgan");
 const app = express();
 
 app.use(morgan("combined"));
-app.use("/assets", express.static(path.join(__dirname, "public")));
+app.use("/assets", express.static(path.join(__dirname, "../src/public")));
 
 app.use("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "../src/index.html"));
 });
 
 app.listen(process.env.PORT || 4000, err => {

@@ -2,17 +2,17 @@
   "name": "generator-react-awesome",
   "version": "1.0.0",
   "description": "This is a awesome generator for React App",
-  "main": "index.js",
+  "main": "tools/server.js",
   "scripts": {
     "start": "node .",
-    "dev": "concurrently --kill-others \"npm run build:watch\" \"nodemon .\"",
+    "dev": "node tools/devServer",
     "build": "webpack",
     "build:watch": "webpack --watch",
     "test": "flow check && jest",
     "test:watch": "jest --watch",
     "lint": "eslint containers/App.js",
-    "precommit-": "npm run test",
-    "prepush-": "npm run test"
+    "precommit": "npm run test",
+    "prepush": "npm run test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -63,7 +63,9 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "browser-sync": "^2.18.13",
     "concurrently": "^3.5.0",
+    "connect-history-api-fallback": "^1.4.0",
     "enzyme": "^3.1.0",
     "eslint": "^4.9.0",
     "eslint-config-prettier": "^2.6.0",
@@ -75,11 +77,12 @@
     "flow-bin": "^0.57.0",
     "husky": "^0.14.3",
     "jest": "^21.2.1",
-    "nodemon": "^1.12.1",
     "prettier": "^1.7.4",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.0.0",
     "standard": "^10.0.3",
-    "webpack": "^3.6.0"
+    "webpack": "^3.6.0",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.20.0"
   }
 }

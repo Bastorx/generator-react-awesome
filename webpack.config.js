@@ -18,9 +18,9 @@ if (devConfig) {
 }
 
 module.exports = {
-  entry: path.join(__dirname, "app.js"),
+  entry: path.join(__dirname, "src/app.js"),
   output: {
-    filename: "public/bundle.js"
+    filename: "src/public/bundle.js"
   },
   module: {
     loaders: [
