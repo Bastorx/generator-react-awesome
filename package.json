@@ -23,6 +23,7 @@
     "react-js",
     "react-router",
     "jest",
+    "flow",
     "webpack",
     "babel",
     "eslint",

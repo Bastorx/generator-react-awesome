@@ -1,16 +1,17 @@
 {
-	"presets": [
-		[
-			"env",
-			{
-				"targets": {
-					"node": "current",
-					"browsers": [">= 5%"]
-				}
-			}
-		],
-		"react",
-		"flow",
-		"stage-2"
-	]
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current",
+          "browsers": [">= 5%"],
+          "uglify": true
+        }
+      }
+    ],
+    "react",
+    "flow",
+    "stage-2"
+  ]
 }
