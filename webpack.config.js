@@ -20,7 +20,9 @@ if (devConfig) {
 module.exports = {
   entry: path.join(__dirname, "src/app.js"),
   output: {
-    filename: "src/public/bundle.js"
+    path: __dirname + "/dist",
+    publicPath: "",
+    filename: "[name].js"
   },
   module: {
     loaders: [

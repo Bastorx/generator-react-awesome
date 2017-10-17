@@ -8,7 +8,7 @@ const webpackHotMiddleware = require("webpack-hot-middleware");
 const historyApiFallback = require("connect-history-api-fallback");
 
 const bundler = webpack(webpackConfig);
-
+console.log(webpackConfig);
 browserSync.init({
   port: process.env.PORT || 4000,
   ghostMode: false,
@@ -28,11 +28,5 @@ browserSync.init({
       })
     ]
   },
-  serveStatic: [
-    {
-      route: "/assets",
-      dir: "src/public"
-    }
-  ],
   files: ["src/*.html"]
 });
