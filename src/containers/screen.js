@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
-import ScreenInfo from "../components/screen";
+import ScreenInfo from "../components/Screen";
 
 class Screen extends Component {
   static propTypes = {

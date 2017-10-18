@@ -6,6 +6,7 @@ const app = express();
 
 app.use(morgan("combined"));
 app.use("/assets", express.static(path.join(__dirname, "../src/public")));
+app.use("/dist", express.static(path.join(__dirname, "../dist")));
 
 app.use("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../src/index.html"));
