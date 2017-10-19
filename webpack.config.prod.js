@@ -1,8 +1,7 @@
 const webpack = require("webpack");
 const config = require("./webpack.config");
 
-module.exports = {
-  ...config,
+module.exports = Object.assign(config, {
   plugins: config.plugins.concat([
     new webpack.optimize.UglifyJsPlugin(),
     new webpack.DefinePlugin({
@@ -11,4 +10,4 @@ module.exports = {
       }
     })
   ])
-};
+});

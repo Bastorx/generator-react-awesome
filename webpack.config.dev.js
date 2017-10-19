@@ -1,8 +1,7 @@
 const webpack = require("webpack");
 const config = require("./webpack.config");
 
-module.exports = {
-  ...config,
+module.exports = Object.assign(config, {
   entry: config.entry.concat(["webpack-hot-middleware/client?reload=true"]),
   plugins: config.plugins.concat([
     new webpack.SourceMapDevToolPlugin(),
@@ -14,4 +13,4 @@ module.exports = {
       }
     })
   ])
-};
+});

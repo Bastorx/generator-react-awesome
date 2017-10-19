@@ -5,3 +5,4 @@
 [libs]
 ./node_modules/fbjs/flow/lib
 [options]
+esproposal.class_static_fields=enable
