@@ -17,6 +17,9 @@ import bundles from "../translations";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import Screen from "./Screen";
+import NotFound from "./NotFound";
+
 // Load i18next
 const loadI18n = new Promise(resolve => {
   i18n.use(i18nextBrowserLanguageDetector).init({
@@ -66,10 +69,8 @@ const App = () => (
     <I18nextProvider i18n={i18n}>
       <Router>
         <Switch>
-          <Route
-            path="/"
-            render={() => <h1>{i18n.t("global:hello-world")}</h1>}
-          />
+          <Route path="/(dog|cat|)" component={Screen} />
+          <Route component={NotFound} />
         </Switch>
       </Router>
     </I18nextProvider>

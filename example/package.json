@@ -8,13 +8,11 @@
     "dev": "node tools/devServer",
     "build": "webpack --config webpack.config.prod.js",
     "build:watch": "webpack --config webpack.config.prod.js --watch",
-    "flow": "flow",
-    "jest": "jest",
-    "jest:watch": "jest --watch",
-    "lint": "eslint src/**.js",
-    "test": "npm run flow && npm run jest && npm run lint",
-    "precommit": "npm run test",
-    "prepush": "npm run build"
+    "test": "flow check && jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint containers/App.js",
+    "precommit-": "npm run test",
+    "prepush-": "npm run build"
   },
   "repository": {
     "type": "git",
