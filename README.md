@@ -18,7 +18,7 @@
 
 	 `npm install`
 
-**How it work**
+**How it works**
 ----------------
 
 React Awesome try to use the best package to start a React App.
