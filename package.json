@@ -13,8 +13,8 @@
     "jest:watch": "jest --watch",
     "lint": "eslint src/**.js",
     "test": "npm run flow && npm run jest && npm run lint",
-    "precommit": "npm run test",
-    "prepush": "npm run build"
+    "precommit-": "npm run test",
+    "prepush-": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -47,14 +47,14 @@
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-i18next": "^6.0.6",
+    "react-i18next": "^7.0.2",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
-    "redux-persist": "^4.10.1",
-    "redux-promise-middleware": "^4.4.1",
+    "redux-persist": "^5.4.0",
+    "redux-promise-middleware": "^5.0.0",
     "redux-thunk": "^2.2.0",
     "reselect": "^3.0.1"
   },
@@ -82,7 +82,7 @@
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
     "file-loader": "^1.1.5",
-    "flow-bin": "^0.57.0",
+    "flow-bin": "^0.59.0",
     "husky": "^0.14.3",
     "jest": "^21.2.1",
     "node-sass": "^4.5.3",
