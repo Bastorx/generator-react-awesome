@@ -98,7 +98,7 @@ You can also start to edit files in translations folder.
 **You should know**
 ----------------
 
-Server (in development and production), render the folder public in a static path /assets, you can load file with 2 way
+Server (in development and production), render the folder public in a static path /assets, you can load file by 2 ways
 
 **Best way:**
 
