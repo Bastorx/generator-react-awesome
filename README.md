@@ -15,7 +15,7 @@
 
 * Install dependences (Don't forget to have a NODE_ENV set in development or [refer](https://stackoverflow.com/questions/34700610/npm-install-wont-install-devdependencies))
 
-      	 `npm install`
+  `npm install`
 
 ## **How it works**
 
