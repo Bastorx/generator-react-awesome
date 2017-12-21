@@ -11,6 +11,7 @@
 * Install react-awesome
 
   `npm install -g generator-react-awesome`
+  
   `yo react-awesome`
 
 * Install dependences (Don't forget to have a NODE_ENV set in development or [refer](https://stackoverflow.com/questions/34700610/npm-install-wont-install-devdependencies))
