@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Bastien Chevallier",
+      "authorEmail": "cheval_b@etna-alternance.net",
+      "authorUrl": "https://github.com/Bastorx"
+    }
+  }
+}
