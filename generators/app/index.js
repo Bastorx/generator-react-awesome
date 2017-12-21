@@ -75,19 +75,25 @@ module.exports = class extends Generator {
       {
         type: 'confirm',
         name: 'flow',
-        message: 'Would you like to use Flow package?',
+        message: 'Would you like to use Flow package (devOnly)?',
         default: true
       },
       {
         type: 'confirm',
         name: 'husky',
-        message: 'Would you like to use Husky?',
+        message: 'Would you like to use Husky (devOnly)?',
         default: true
       },
       {
         type: 'confirm',
         name: 'eslint',
-        message: 'Would you like to use Eslint?',
+        message: 'Would you like to use Eslint (devOnly)?',
+        default: true
+      },
+      {
+        type: 'confirm',
+        name: 'browserSync',
+        message: 'Would you like to use BrowserSync (devOnly)?',
         default: true
       }
     ];
