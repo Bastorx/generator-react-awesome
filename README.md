@@ -1,3 +1,5 @@
+# THIS GENERATOR IS IN BETA-TESTING, PLEASE WAITING FOR A FIRST MAJOR VERSION (V1.0.0) BEFORE INSTALL IT.
+
 # **generator-react-awesome**
 
 **_A generator for a complete react app. Include (React, Redux, React-Router, i18next, Jest, Eslint, Flow, Webpack, ES6+ (Babel)...)_**
@@ -11,7 +13,7 @@
 * Install react-awesome
 
   `npm install -g generator-react-awesome`
-  
+
   `yo react-awesome`
 
 * Install dependences (Don't forget to have a NODE_ENV set in development or [refer](https://stackoverflow.com/questions/34700610/npm-install-wont-install-devdependencies))
