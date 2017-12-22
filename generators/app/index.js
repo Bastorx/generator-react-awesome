@@ -135,10 +135,27 @@ module.exports = class extends Generator {
 
   writing() {
     this.sourceRoot(path.join(__dirname, 'react-awesome'));
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
-    );
+    const { i18n, jest, flow, eslint, browserSync } = this.options;
+
+    this.fs.copy(this.templatePath('main/**'), this.destinationPath('.'));
+    if (i18n) {
+      this.fs.copy(this.templatePath('i18n/**'), this.destinationPath('src/'));
+    }
+    if (jest) {
+      this.fs.copy(this.templatePath('__mocks__'), this.destinationPath('.'));
+    }
+    if (flow) {
+      this.fs.copy(this.templatePath('flow/**'), this.destinationPath('.'));
+    }
+    if (eslint) {
+      this.fs.copy(this.templatePath('eslint/**'), this.destinationPath('.'));
+    }
+    if (browserSync) {
+      this.fs.copy(
+        this.templatePath('tools/devServer.js'),
+        this.destinationPath('tools/devServer.js')
+      );
+    }
   }
 
   install() {
